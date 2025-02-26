@@ -1,0 +1,74 @@
+[
+  {
+    "kode": "OVO10",
+    "keterangan": "SALDO OVO 10.000",
+    "harga": 10950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO15",
+    "keterangan": "SALDO OVO 15.000",
+    "harga": 15950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO20",
+    "keterangan": "SALDO OVO 20.000",
+    "harga": 20950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO25",
+    "keterangan": "SALDO OVO 25.000",
+    "harga": 25950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO30",
+    "keterangan": "SALDO OVO 30.000",
+    "harga": 30950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO35",
+    "keterangan": "SALDO OVO 35.000",
+    "harga": 35950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO40",
+    "keterangan": "SALDO OVO 40.000",
+    "harga": 40950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO45",
+    "keterangan": "SALDO OVO 45.000",
+    "harga": 45950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO50",
+    "keterangan": "SALDO OVO 50.000",
+    "harga": 50950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO55",
+    "keterangan": "SALDO OVO 55.000",
+    "harga": 55950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO60",
+    "keterangan": "SALDO OVO 60.000",
+    "harga": 60950,
+    "status": "Open"
+  },
+  {
+    "kode": "OVO65",
+    "keterangan": "SALDO OVO 65.000",
+    "harga": 65950,
+    "status": "Open"
+  }
+]

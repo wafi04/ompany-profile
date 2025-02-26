@@ -1,0 +1,38 @@
+[
+  {
+    "kode": "PLN20",
+    "keterangan": "PLN REPLY STANDART 20K",
+    "harga": 20560,
+    "status": "Open"
+  },
+  {
+    "kode": "PLN50",
+    "keterangan": "PLN REPLY STANDART 50K",
+    "harga": 50560,
+    "status": "Open"
+  },
+  {
+    "kode": "PLN100",
+    "keterangan": "PLN REPLY STANDART 100K",
+    "harga": 100560,
+    "status": "Open"
+  },
+  {
+    "kode": "PLN200",
+    "keterangan": "PLN REPLY STANDART 200K",
+    "harga": 200560,
+    "status": "Open"
+  },
+  {
+    "kode": "PLN300",
+    "keterangan": "PLN REPLY STANDART 300K",
+    "harga": 300560,
+    "status": "Open"
+  },
+  {
+    "kode": "PLN500",
+    "keterangan": "PLN REPLY STANDART 500K",
+    "harga": 500560,
+    "status": "Open"
+  }
+]

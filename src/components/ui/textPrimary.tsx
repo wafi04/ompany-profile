@@ -1,13 +1,16 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
-// Improved TextPrimary component with better animation and spacing
 export function TextPrimary({
   children,
   className,
+  before,
+  after,
 }: {
   children: ReactNode;
   className?: string;
+  before?: string;
+  after?: string;
 }) {
   return (
     <span
@@ -16,8 +19,16 @@ export function TextPrimary({
         className
       )}>
       {children}
-      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left scale-x-100 transition-transform duration-300 ease-out"></span>
-      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 transform origin-right scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+      <span
+        className={cn(
+          "absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left scale-x-100 transition-transform duration-300 ease-out",
+          before
+        )}></span>
+      <span
+        className={cn(
+          "absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 transform origin-right scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out",
+          after
+        )}></span>
     </span>
   );
 }

@@ -22,6 +22,8 @@ export default {
         },
       },
       colors: {
+        primari: "#1a4171",
+        subPrimary: "#0d2240",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

@@ -1,0 +1,134 @@
+[
+  {
+    "kode": "IRP5",
+    "keterangan": "ISAT REGULER PROMO 5K",
+    "harga": 5640,
+    "status": "Open"
+  },
+  {
+    "kode": "PROMO10",
+    "keterangan": "INDOSAT REGULER PROMO",
+    "harga": 10380,
+    "status": "Open"
+  },
+  {
+    "kode": "IRP10",
+    "keterangan": "ISAT REGULER PROMO 10K",
+    "harga": 10325,
+    "status": "Open"
+  },
+  {
+    "kode": "IRP15",
+    "keterangan": "ISAT REGULER PROMO 15K",
+    "harga": 14970,
+    "status": "Open"
+  },
+  {
+    "kode": "II20",
+    "keterangan": "ISAT REGULER 20K",
+    "harga": 19975,
+    "status": "Open"
+  },
+  {
+    "kode": "IRP20",
+    "keterangan": "ISAT REGULER PROMO 20K",
+    "harga": 19750,
+    "status": "Open"
+  },
+  {
+    "kode": "IRP25",
+    "keterangan": "ISAT REGULER PROMO 25K",
+    "harga": 24800,
+    "status": "Open"
+  },
+  {
+    "kode": "IRP30",
+    "keterangan": "ISAT REGULER PROMO 30K",
+    "harga": 29790,
+    "status": "Open"
+  },
+  {
+    "kode": "IR40",
+    "keterangan": "ISAT REGULER PROMO 40K",
+    "harga": 38200,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP40",
+    "keterangan": "ISAT REGULER PROMO 40K",
+    "harga": 39600,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP50",
+    "keterangan": "ISAT REGULER PROMO 50K",
+    "harga": 49400,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP60",
+    "keterangan": "ISAT REGULER PROMO 60K",
+    "harga": 59790,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP70",
+    "keterangan": "ISAT REGULER PROMO 70K",
+    "harga": 69475,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP80",
+    "keterangan": "ISAT REGULER PROMO 80K",
+    "harga": 79560,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP90",
+    "keterangan": "ISAT REGULER PROMO 90K",
+    "harga": 89250,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP100",
+    "keterangan": "ISAT REGULER PROMO 100K",
+    "harga": 98600,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP125",
+    "keterangan": "ISAT REGULER PROMO 125K",
+    "harga": 123775,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP150",
+    "keterangan": "ISAT REGULER PROMO 150K",
+    "harga": 148475,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP175",
+    "keterangan": "ISAT REGULER PROMO 175K",
+    "harga": 173200,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP200",
+    "keterangan": "ISAT REGULER PROMO 200K",
+    "harga": 197695,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP250",
+    "keterangan": "ISAT REGULER PROMO 250K",
+    "harga": 246955,
+    "status": "Gangguan"
+  },
+  {
+    "kode": "IRP300",
+    "keterangan": "ISAT REGULER PROMO 300K",
+    "harga": 296200,
+    "status": "Gangguan"
+  }
+]
