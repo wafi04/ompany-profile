@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export function ThumbnailSection() {
   return (
-    <section className="w-full py-24" aria-labelledby="section-title">
+    <section className="w-full py-16 md:py-24" aria-labelledby="section-title">
       <div className="container max-w-5xl mx-auto px-6">
         {/* Card with subtle shadow */}
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col items-center text-center">

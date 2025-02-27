@@ -16,7 +16,6 @@ export function PriceList() {
 
   const handleIframeError = (key: keyof typeof loadingStates) => {
     setLoadingStates((prev) => ({ ...prev, [key]: false }));
-    console.error(`Error loading iframe: ${key}`);
   };
 
   return (

@@ -12,7 +12,6 @@ export function Banner() {
       <div className="w-full max-w-screen-lg mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 z-10">
         <div className="md:w-1/2">
           <div className="space-y-3 text-4xl  font-bold mb-6 text-orange-500">
-            {/* First line: "Jualan Murah, Untung," */}
             <h2 className="leading-tight">
               <span className="">Lebih </span>
               <span>Dari Sekedar</span>
@@ -20,15 +19,7 @@ export function Banner() {
               <TextPrimary before="bg-white">Dinamis</TextPrimary>
               <TextPrimary before="bg-white">& Komunikatif.</TextPrimary>{" "}
             </h2>
-
-            {/* Second line: "Pelayanan Ramah, dan" */}
-
-            {/* Third line: "Transaksi Aman" */}
-            <h2 className="leading-tight">
-              {/* <TextPrimary>Transaksi Aman.</TextPrimary> */}
-            </h2>
           </div>
-
           <p className="text-sm text-gray-300 mb-8 max-w-lg">
             Dengan layanan solutif dan produk digital terbaru, kami hadir untuk
             mendukung perkembangan bisnis Anda.

@@ -7,7 +7,7 @@ import { ThumbnailSection } from "@/components/layouts/Thumbnail";
 
 export default function Home() {
   return (
-    <main className="p-0 ">
+    <main className="p-0 space-y-10">
       <Banner />
       <ThumbnailSection />
       <PriceList />
