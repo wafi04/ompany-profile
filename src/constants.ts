@@ -1,7 +1,5 @@
 export const dataHeader = [
-  { label: "Home", href: "/" },
-  { label: "Kemitraan", href: "/kemitraan" },
-  { label: "Partnership Dealer", href: "/partnershipdealer" },
+  { label: "Home", href: "/" }, 
   { label: "Harga", href: "price" },
   { label: "Tentang Kami", href: "aboutme" },
 ];

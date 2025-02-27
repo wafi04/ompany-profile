@@ -133,7 +133,7 @@ export function FormContact() {
           </Label>
           <textarea
             id="alamat"
-            rows={4}
+            rows={8}
             className="w-full bg-white p-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-black min-h-[100px]"
             {...register("pesan", { required: "Pesan harus diisi" })}
             placeholder="Tulis pesan anda disini..."></textarea>
