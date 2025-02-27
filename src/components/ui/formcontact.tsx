@@ -1,16 +1,22 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { Button } from "./button";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./input";
 import { Label } from "./label";
 import { Send } from "lucide-react";
+import { ContactData, ContactFormSchema } from "@/data/validation";
+import { useFormPostEmail } from "@/hooks/useEmailPost";
 
 export function FormContact() {
+  const sendEmail = useFormPostEmail();
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
-  } = useForm({
+  } = useForm<ContactData>({
+    resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -21,14 +27,10 @@ export function FormContact() {
   });
 
   // Handle form submission
-  const onSubmit = async (data: {
-    name: string;
-    email: string;
-    noHp: string;
-    pesan: string;
-    subject: string;
-  }) => {
+  const onSubmit = async (data: ContactData) => {
     console.log("Form submitted:", data);
+    sendEmail.mutate(data);
+    reset();
     await new Promise((resolve) => setTimeout(resolve, 1000));
   };
 
@@ -108,6 +110,7 @@ export function FormContact() {
           </Label>
           <Input
             id="noHp"
+            type="number"
             {...register("noHp", {
               required: "Nomor handphone harus diisi",
               pattern: {

@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
 import { TextPrimary } from "@/components/ui/textPrimary";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function HeaderAboutUs() {
+  const scrollToTimeline = () => {
+    const timelineSection = document.getElementById("company-timeline");
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6">
       <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-8 py-24">
@@ -32,7 +39,7 @@ export function HeaderAboutUs() {
           </div>
           {/* Description left */}
           <p className="mt-6 md:mt-8 text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
-            We're passionate about Topup{" "}
+            We&apos;re passionate about Topup{" "}
             <span className="text-orange-500 font-medium">
               exceptional experiences
             </span>
@@ -42,7 +49,9 @@ export function HeaderAboutUs() {
           </p>
 
           {/* button more than */}
-          <Button className="bg-primari mt-8 hover:bg-opacity-90 text-white font-semibold py-4 sm:py-6 px-6 sm:px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base">
+          <Button
+            className="bg-primari mt-8 hover:bg-opacity-90 text-white font-semibold py-4 sm:py-6 px-6 sm:px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base"
+            onClick={scrollToTimeline}>
             Our Story
           </Button>
         </div>

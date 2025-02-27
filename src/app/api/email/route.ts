@@ -4,10 +4,10 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
-    const { name, email, noHp, alamat } = await request.json();
+    const { name, email, noHp, subject, pesan } = await request.json();
 
     // validation input
-    if (!name || !email || !noHp || !alamat) {
+    if (!name || !email || !noHp || !subject || !pesan) {
       return new Response(
         JSON.stringify({ error: "Semua field harus diisi" }),
         {
@@ -39,14 +39,14 @@ export async function POST(request: Request) {
         Nama: ${name}
         Email: ${email}
         No Handphone: ${noHp}
-        Alamat: ${alamat}
+        Alamat: ${pesan}
       `,
       html: `
         <h3>Pesan Baru dari Formulir Kontak</h3>
         <p><strong>Nama:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>No Handphone:</strong> ${noHp}</p>
-        <p><strong>Alamat:</strong> ${alamat}</p>
+        <p><strong>pesan:</strong> ${pesan}</p>
       `,
     };
 

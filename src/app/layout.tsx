@@ -6,6 +6,8 @@ import Header from "@/components/layouts/navbar";
 import { ReactQueryProvider } from "@/components/provider/react-query-provider";
 import { WhatsAppButton } from "@/components/ui/buttonwa";
 import { TelegramButton } from "@/components/ui/buttonTele";
+import { Footer } from "@/components/layouts/footer";
+import { Toaster } from "sonner";
 
 const geistSans = Poppins({
   weight: ["100", "300", "500", "700"],
@@ -33,6 +35,8 @@ export default function RootLayout({
             disableTransitionOnChange>
             <Header />
             {children}
+            <Toaster />
+            <Footer />
             <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center space-y-2">
               <WhatsAppButton
                 phoneNumber="6282226197047"
