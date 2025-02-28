@@ -9,8 +9,8 @@ export function IframeComponents({
   className,
 }: {
   data: string;
-  onLoad: () => void;
-  onError: () => void;
+  onLoad?: () => void;
+  onError?: () => void;
   className?: string;
 }): JSX.Element {
   return (

@@ -5,25 +5,27 @@ import { ArrowRight } from "lucide-react";
 export function ThumbnailSection() {
   return (
     <section className="w-full py-16 md:py-24" aria-labelledby="section-title">
-      <div className="container max-w-5xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto">
         {/* Card with subtle shadow */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col items-center text-center">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col items-center">
           {/* Decorative element */}
           <div className="w-20 h-1 bg-orange-500 mb-8 rounded-full"></div>
 
           {/* Main content */}
-          <div className="space-y-6 mb-8">
+          <div className="space-y-6 mb-8 text-center">
             <h2
               id="section-title"
-              className="text-[#1a4171] text-2xl md:text-3xl font-bold leading-tight">
-              Dengan layanan solutif dan produk digital terbaru, kami hadir
-              untuk mendukung perkembangan bisnis Anda.
+              className="text-[#1a4171] text-2xl md:text-3xl font-bold leading-tight ">
+              BISNIS DIGITAL LEBIH MUDAH & MENGUNTUNGKAN
             </h2>
 
-            <p className="text-orange-500 text-lg md:text-xl font-medium">
-              New Universe H2H adalah Distributor pulsa elektrik yang befokus
-              mensupply produk-produk kepada Distributor pulsa tingkat 3 /
-              Merchant Se-Indonesia
+            <p className="text-orange-500 text-base leading-relaxed">
+              <strong className="font-bold text-lg block mb-3">
+                New Universe H2H - Solusi Tepat untuk Bisnis Pulsa Anda
+              </strong>
+              Nikmati kemudahan transaksi top-up game, voucher, dan pulsa dengan
+              sistem yang cepat, aman, dan terpercaya. Khusus untuk Distributor
+              tingkat 3 dan Merchant di seluruh Indonesia.
             </p>
           </div>
 

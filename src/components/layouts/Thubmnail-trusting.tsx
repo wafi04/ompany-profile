@@ -131,45 +131,45 @@ export function ThumbnailTrusting() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">
+        <h2 className="text-3xl font-bold text-center text-gray-200 mb-12">
           Dipercaya oleh Banyak Mitra
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* People Counter */}
-          <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md text-center">
+          <div className="bg-gray-200/40 bg-opacity-90 p-8 rounded-lg shadow-md text-center">
             <div className="text-4xl font-bold text-orange-500 mb-2">
               {formatNumber(counts.people)}
               <span className="text-orange-500">+</span>
             </div>
-            <p className="text-gray-700 font-medium">Mitra Aktif</p>
+            <p className="text-gray-200 font-medium">Mitra Aktif</p>
           </div>
 
           {/* Projects Counter */}
-          <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md text-center">
+          <div className="bg-gray-200/40 bg-opacity-90 p-8 rounded-lg shadow-md text-center">
             <div className="text-4xl font-bold text-orange-500 mb-2">
               {formatNumber(counts.projects)}
               <span className="text-orange-500">+</span>
             </div>
-            <p className="text-gray-700 font-medium">Transaksi Harian</p>
+            <p className="text-gray-200 font-medium">Transaksi Harian</p>
           </div>
 
           {/* Years Counter */}
-          <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md text-center">
+          <div className="bg-gray-200/40 bg-opacity-90 p-8 rounded-lg shadow-md text-center">
             <div className="text-4xl font-bold text-orange-500 mb-2">
               {counts.years}
               <span className="text-orange-500">+</span>
             </div>
-            <p className="text-gray-700 font-medium">Tahun Pengalaman</p>
+            <p className="text-gray-200 font-medium">Tahun Pengalaman</p>
           </div>
 
           {/* Satisfaction Counter */}
-          <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md text-center">
+          <div className="bg-gray-200/40 bg-opacity-90 p-8 rounded-lg shadow-md text-center">
             <div className="text-4xl font-bold text-orange-500 mb-2">
               {counts.satisfaction}
               <span className="text-orange-500">%</span>
             </div>
-            <p className="text-gray-700 font-medium">Tingkat Kepuasan</p>
+            <p className="text-gray-200 font-medium">Tingkat Kepuasan</p>
           </div>
         </div>
       </div>

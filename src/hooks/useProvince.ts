@@ -17,9 +17,6 @@ export function useRegencies({ id }: { id: string }) {
           `https://emsifa.github.io/api-wilayah-indonesia/api/regencies/${id}.json`
         );
 
-        // Log the raw response to see what we're getting
-        console.log("Raw regencies API response:", response);
-
         // Make sure we're getting an array of regency objects
         if (Array.isArray(response.data)) {
           // Normalize the data to ensure consistent format
@@ -31,14 +28,11 @@ export function useRegencies({ id }: { id: string }) {
             })
           );
 
-          console.log("Normalized regencies data:", normalizedData);
           return normalizedData;
         } else {
-          console.error("Expected array but got:", typeof response.data);
           return [];
         }
       } catch (err) {
-        console.error("Error fetching regencies:", err);
         throw err;
       }
     },

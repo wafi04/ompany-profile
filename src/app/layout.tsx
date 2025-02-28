@@ -8,7 +8,7 @@ import { WhatsAppButton } from "@/components/ui/buttonwa";
 import { TelegramButton } from "@/components/ui/buttonTele";
 import { Footer } from "@/components/layouts/footer";
 import { Toaster } from "sonner";
-import { IMAGE_LOGO, WA_TELP } from "@/constants";
+import { WA_TELP } from "@/constants";
 
 const geistSans = Poppins({
   weight: ["100", "300", "500", "700"],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Dengan layanan solutif dan produk digital terbaru, kami hadir untuk mendukung perkembangan bisnis Anda. Universe H2H hadir memberikan solusi untuk masyarakat bisa melakukan transaksi digital seperti topup game,membeli voucher ,dan masih banayak lagi.",
   icons: {
-    icon: `${IMAGE_LOGO}`,
+    icon: `/logo.png`,
   },
 };
 

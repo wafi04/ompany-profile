@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { dataHeader, IMAGE_LOGO } from "@/constants";
+import { dataHeader } from "@/constants";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
@@ -12,7 +12,6 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const pathname = usePathname();
 
-  // Check if it's the homepage
   const isHomePage = pathname === "/";
 
   useEffect(() => {
@@ -31,24 +30,10 @@ export const Header = () => {
     };
   }, []);
 
-  // Close mobile menu when window is resized to desktop width
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        // md breakpoint
-        setIsMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
 
-  // Determine background color based on page and scroll state
   const getBackgroundColor = () => {
     if (isHomePage) {
       return isScrolled ? "bg-[#0d2240] shadow-md py-2" : "bg-transparent py-4";
@@ -57,7 +42,6 @@ export const Header = () => {
     }
   };
 
-  // Disable body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -69,7 +53,6 @@ export const Header = () => {
     };
   }, [isMenuOpen]);
 
-  // Active link style
   const activeLinkStyle = (href: string) => {
     return pathname === href ? "text-blue-400" : "";
   };
@@ -83,7 +66,7 @@ export const Header = () => {
           <div className="flex-shrink-0">
             <Link href={"/"} className="flex  justify-start items-start">
               <Image
-                src={IMAGE_LOGO as string}
+                src={"/logo.png"}
                 alt="logo universe h2h"
                 width={700}
                 height={80}

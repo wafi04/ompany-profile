@@ -28,7 +28,6 @@ export function FormContact() {
 
   // Handle form submission
   const onSubmit = async (data: ContactData) => {
-    console.log("Form submitted:", data);
     sendEmail.mutate(data);
     reset();
     await new Promise((resolve) => setTimeout(resolve, 1000));
