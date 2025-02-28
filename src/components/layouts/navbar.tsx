@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { dataHeader } from "@/constants";
+import { dataHeader, IMAGE_LOGO } from "@/constants";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -30,6 +31,19 @@ export const Header = () => {
     };
   }, []);
 
+  // Close mobile menu when window is resized to desktop width
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        // md breakpoint
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
@@ -43,27 +57,59 @@ export const Header = () => {
     }
   };
 
+  // Disable body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
+  // Active link style
+  const activeLinkStyle = (href: string) => {
+    return pathname === href ? "text-blue-400" : "";
+  };
+
   return (
     <nav
       className={`fixed z-20 top-0 w-full transition-all duration-300 text-white ${getBackgroundColor()}`}>
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-8">
-          {/* Logo */}
-          <Link href={"/"} className="text-xl sm:text-2xl font-bold">
-            UniverseH2H
-          </Link>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          {/* Logo - Changed to align left */}
+          <div className="flex-shrink-0">
+            <Link href={"/"} className="flex  justify-start items-start">
+              <Image
+                src={IMAGE_LOGO as string}
+                alt="logo universe h2h"
+                width={700}
+                height={80}
+                priority
+                className="h-14 p-0 max-w-[200px] object-cover"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-3 lg:space-x-6">
-            {dataHeader.map((item) => (
-              <Link
-                href={item.href}
-                key={item.href}
-                className="relative group py-2">
-                <p className="text-sm lg:text-base font-medium">{item.label}</p>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center justify-end">
+            <div className="flex items-center space-x-1 lg:space-x-4">
+              {dataHeader.map((item) => (
+                <Link
+                  href={item.href}
+                  key={item.href}
+                  className={`relative group py-2 px-2 lg:px-3 ${activeLinkStyle(
+                    item.href
+                  )}`}>
+                  <p className="text-sm xl:text-base font-medium hover:text-blue-300 transition-colors whitespace-nowrap">
+                    {item.label}
+                  </p>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,19 +131,25 @@ export const Header = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isMenuOpen
-            ? "max-h-screen opacity-100 border-t border-blue-800/30"
-            : "max-h-0 opacity-0"
+        className={`md:hidden fixed inset-0 bg-[#0d2240]/95 z-30 transition-transform duration-300 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}>
-        <div className="bg-[#0d2240] shadow-lg px-4 py-2">
+        <div className="flex flex-col h-full pt-20 px-4">
+          <Button
+            size="icon"
+            className="absolute top-4 right-4 hover:bg-gray-700/20 bg-transparent text-white size-10"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Close menu">
+            <X className="size-5" />
+          </Button>
+
           {dataHeader.map((item) => (
             <Link
               href={item.href}
               key={item.href}
               onClick={handleLinkClick}
-              className="block">
-              <p className="px-4 py-3 text-base font-medium border-b border-blue-800/20 hover:bg-blue-800/20 rounded-md my-1 transition-colors">
+              className={`block ${activeLinkStyle(item.href)}`}>
+              <p className="px-4 py-3 text-lg font-medium border-b border-blue-800/20 hover:bg-blue-800/20 rounded-md my-1 transition-colors">
                 {item.label}
               </p>
             </Link>

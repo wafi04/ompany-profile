@@ -8,7 +8,7 @@ const getDisplayName = (type: string): string => {
     voucher: "Voucher",
     game: "Game",
     pln: "PLN",
-    data: "Data Package",
+    data: "Paket Data",
     pulsa: "Pulsa",
     listrik: "Listrik",
   };

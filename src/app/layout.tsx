@@ -8,6 +8,7 @@ import { WhatsAppButton } from "@/components/ui/buttonwa";
 import { TelegramButton } from "@/components/ui/buttonTele";
 import { Footer } from "@/components/layouts/footer";
 import { Toaster } from "sonner";
+import { IMAGE_LOGO, WA_TELP } from "@/constants";
 
 const geistSans = Poppins({
   weight: ["100", "300", "500", "700"],
@@ -15,8 +16,16 @@ const geistSans = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "UniverseH2H",
-  description: "UniverseH2H",
+  title: {
+    absolute: "Universe H2H",
+    default: "Universe H2H",
+    template: " %s  | Universe H2H ",
+  },
+  description:
+    "Dengan layanan solutif dan produk digital terbaru, kami hadir untuk mendukung perkembangan bisnis Anda. Universe H2H hadir memberikan solusi untuk masyarakat bisa melakukan transaksi digital seperti topup game,membeli voucher ,dan masih banayak lagi.",
+  icons: {
+    icon: `${IMAGE_LOGO}`,
+  },
 };
 
 export default function RootLayout({
@@ -38,11 +47,8 @@ export default function RootLayout({
             <Toaster />
             <Footer />
             <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center space-y-2">
-              <WhatsAppButton
-                phoneNumber="6282226197047"
-                message="Halo, saya ingin bertanya tentang produk Anda."
-              />
-              <TelegramButton username="sincotans" />
+              <WhatsAppButton phoneNumber={`62${WA_TELP}`} />
+              <TelegramButton />
             </div>
           </ThemeProvider>
         </body>

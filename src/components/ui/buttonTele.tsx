@@ -1,8 +1,8 @@
+import { URL_TELEGRAM } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
 interface TelegramButtonProps {
-  username: string;
   message?: string;
   label?: string;
   size?: "sm" | "md" | "lg";
@@ -12,26 +12,11 @@ interface TelegramButtonProps {
 }
 
 export function TelegramButton({
-  username,
-  message = "",
   label = "Chat with us",
   size = "md",
   showLabel = true,
   className = "",
-  useDeepLink,
 }: TelegramButtonProps) {
-  const cleanUsername = username.replace(/^@/, "");
-
-  const encodedMessage = encodeURIComponent(message);
-
-  const telegramUrl = useDeepLink
-    ? `tg://resolve?domain=${cleanUsername}${
-        message ? `&start=${encodedMessage}` : ""
-      }`
-    : `https://t.me/${cleanUsername}${
-        message ? `?start=${encodedMessage}` : ""
-      }`;
-
   const sizeClasses = {
     sm: "text-xs px-2 py-1 space-x-1",
     md: "text-sm px-3 py-2 space-x-2",
@@ -47,7 +32,7 @@ export function TelegramButton({
 
   return (
     <a
-      href={telegramUrl}
+      href={URL_TELEGRAM}
       target="_blank"
       rel="noopener noreferrer"
       className={className}

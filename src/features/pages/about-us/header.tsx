@@ -38,14 +38,15 @@ export function HeaderAboutUs() {
             </h1>
           </div>
           {/* Description left */}
-          <p className="mt-6 md:mt-8 text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
-            We&apos;re passionate about Topup{" "}
-            <span className="text-orange-500 font-medium">
-              exceptional experiences
-            </span>
-            . Our team combines creativity with expertise to deliver solutions
-            that exceed expectations. Learn about our journey, values, and the
-            people behind our success.
+          <p className="mt-6 md:mt-8  text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
+            Dengan pengalaman Distributor pulsa elektrik yang{" "}
+            <span className="text-orange-500">terampil </span>dengan
+            menggabungkan
+            <span className="text-orange-500"> kreativitas </span>
+            serta
+            <span className="text-orange-500"> keahlian </span>
+            untuk memberikan solusi yang solutip, hingga mitra dapat apa yang
+            mereka inginkan.
           </p>
 
           {/* button more than */}

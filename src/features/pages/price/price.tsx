@@ -8,6 +8,17 @@ import {
   URL_LIST_ML,
   URL_LIST_PLN,
   URL_LIST_VOUCHER,
+  URL_PKG_AXIS,
+  URL_PKG_INDOSAT,
+  URL_PKG_SMARTFREN,
+  URL_PKG_TELKOMSEL,
+  URL_PKG_THEREE,
+  URL_PULSA_AXIS,
+  URL_PULSA_INDOSAT,
+  URL_PULSA_SMARTFREN,
+  URL_PULSA_TELKOMSEL,
+  URL_PULSA_THEREE,
+  URL_PULSA_XL,
 } from "@/constants";
 import { useFilterStore } from "@/hooks/useFilterPrice";
 import { JSX } from "react";
@@ -22,9 +33,22 @@ export function PriceList(): JSX.Element {
     game: [URL_LIST_ML, URL_LIST_FF],
     pln: [URL_LIST_PLN],
     voucher: [URL_LIST_VOUCHER],
-    data: [""],
-    pulsa: [""],
-    listrik: [""],
+    pulsa: [
+      URL_PULSA_AXIS,
+      URL_PULSA_INDOSAT,
+      URL_PULSA_TELKOMSEL,
+      URL_PULSA_THEREE,
+      URL_PULSA_XL,
+      URL_PULSA_SMARTFREN,
+    ],
+    data: [
+      URL_PKG_AXIS,
+      URL_PKG_INDOSAT,
+      URL_PKG_SMARTFREN,
+      URL_PKG_THEREE,
+      URL_PKG_TELKOMSEL,
+      URL_PKG_THEREE,
+    ],
   };
 
   const urls = typeToUrlMap[type as keyof typeof typeToUrlMap] || [];

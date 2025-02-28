@@ -57,65 +57,6 @@ export function Footer(): JSX.Element {
               <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500 rounded"></span>
             </h2>
 
-            {/* Social Media Icons */}
-            <div className="flex gap-5 mb-6">
-              <Link
-                href="#"
-                className="bg-blue-800 p-3 rounded-full hover:bg-orange-500 transition-colors duration-300"
-                aria-label="Instagram">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="#"
-                className="bg-blue-800 p-3 rounded-full hover:bg-orange-500 transition-colors duration-300"
-                aria-label="Twitter">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="#"
-                className="bg-blue-800 p-3 rounded-full hover:bg-orange-500 transition-colors duration-300"
-                aria-label="Instagram">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"
-                  />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </Link>
-            </div>
-
             {/* Contact Information */}
             <div className="space-y-3 text-gray-300">
               <p className="flex items-center gap-3">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -15,22 +16,24 @@ export function ThumbnailSection() {
             <h2
               id="section-title"
               className="text-[#1a4171] text-2xl md:text-3xl font-bold leading-tight">
-              New Universe H2H adalah Distributor pulsa elektrik yang befokus
-              mensupply produk-produk kepada Distributor pulsa tk 3 / Merchant
-              Se-Indonesia
+              Dengan layanan solutif dan produk digital terbaru, kami hadir
+              untuk mendukung perkembangan bisnis Anda.
             </h2>
 
             <p className="text-orange-500 text-lg md:text-xl font-medium">
-              Dengan layanan solutif dan produk digital terbaru, kami hadir
-              untuk mendukung perkembangan bisnis Anda.
+              New Universe H2H adalah Distributor pulsa elektrik yang befokus
+              mensupply produk-produk kepada Distributor pulsa tingkat 3 /
+              Merchant Se-Indonesia
             </p>
           </div>
 
           {/* Improved CTA button */}
-          <Button className="bg-[#1a4171] hover:bg-[#0f2a4d] text-white px-8 py-6 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 group">
-            Pelajari Lebih Lanjut
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </Button>
+          <Link href={"/aboutme"}>
+            <Button className="bg-[#1a4171] hover:bg-[#0f2a4d] text-white px-8 py-6 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 group">
+              Pelajari Lebih Lanjut
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
