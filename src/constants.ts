@@ -13,6 +13,9 @@ export const URL_LIST_VOUCHER = process.env.NEXT_PUBLIC_URL_VOUCHER;
 export const IMAGE_LOGO = process.env.NEXT_PUBLIC_URL_LOGO;
 export const WA_TELP = process.env.NEXT_PUBLIC_WA_TELP;
 export const EMAIL_CONTACT = process.env.NEXT_PUBLIC_EMAIL_CONTACT;
+
+
+
 // OPERATOR
 export const URL_PULSA_AXIS = process.env.NEXT_PUBLIC_URL_PULSA_AXIS;
 export const URL_PKG_AXIS = process.env.NEXT_PUBLIC_URL_PKG_AXIS;

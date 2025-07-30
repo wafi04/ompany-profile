@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { dataHeader } from "@/constants";
+import { dataHeader, IMAGE_LOGO } from "@/constants";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
@@ -66,12 +66,12 @@ export const Header = () => {
           <div className="flex-shrink-0">
             <Link href={"/"} className="flex  justify-start items-start">
               <Image
-                src={"/logo.png"}
+                src={IMAGE_LOGO as string}
                 alt="logo universe h2h"
                 width={700}
                 height={80}
                 priority
-                className="h-14 p-0 max-w-[200px] object-cover"
+                className="p-0 max-w-[200px] object-cover"
               />
             </Link>
           </div>
