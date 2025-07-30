@@ -66,7 +66,7 @@ export const Header = () => {
           <div className="flex-shrink-0">
             <Link href={"/"} className="flex  justify-start items-start">
               <Image
-                src={'/logo.png'}
+                src={IMAGE_LOGO as string}
                 alt="logo universe h2h"
                 width={700}
                 height={80}

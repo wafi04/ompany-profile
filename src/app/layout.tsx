@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Dengan layanan solutif dan produk digital terbaru, kami hadir untuk mendukung perkembangan bisnis Anda. Universe H2H hadir memberikan solusi untuk masyarakat bisa melakukan transaksi digital seperti topup game,membeli voucher ,dan masih banayak lagi.",
   icons: {
-    icon: `/logo.png`,
+    icon: `https://res.cloudinary.com/dikf91ikq/image/upload/v1753870220/Horizontal_Logo_m8ei71.png`,
   },
 };
 

@@ -10,7 +10,7 @@ export const URL_LIST_PLN = process.env.NEXT_PUBLIC_URL_PLN;
 export const URL_LIST_FF = process.env.NEXT_PUBLIC_URL_FF;
 export const URL_LIST_ML = process.env.NEXT_PUBLIC_URL_ML;
 export const URL_LIST_VOUCHER = process.env.NEXT_PUBLIC_URL_VOUCHER;
-export const IMAGE_LOGO = process.env.NEXT_PUBLIC_URL_LOGO;
+export const IMAGE_LOGO = "https://res.cloudinary.com/dikf91ikq/image/upload/v1753870220/Horizontal_Logo_m8ei71.png"
 export const WA_TELP = process.env.NEXT_PUBLIC_WA_TELP;
 export const EMAIL_CONTACT = process.env.NEXT_PUBLIC_EMAIL_CONTACT;
 
